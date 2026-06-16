@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///C:/Users/user/Downloads/index_17.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>(주) 원큐파트너스 — 무료 견적 상담</title>
+<link href="./(주) 원큐파트너스 — 무료 견적 상담_files/css2" rel="stylesheet">
+<style>
+:root {
+  --brand-dark: #6a1b9a;
+  --brand-light: #ab47bc;
+  --brand-bg: #f5e9f9;
+  --brand-border: #d5a8e8;
+  --text: #2c1338;
+  --text-sub: #6b5878;
+  --gray: #888;
+  --border: #e5d6ee;
+  --bg: #fafafa;
+  --danger: #d62828;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin:0; padding:0; font-family:'Noto Sans KR', sans-serif; background:var(--bg); color:var(--text); }
+
+/* 헤더 */
+.site-header { background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-light) 100%); padding: 28px 20px; text-align: center; color: #fff; }
+.site-header .brand-eng { font-size: 11px; letter-spacing: 3px; opacity: 0.7; margin-bottom: 8px; font-weight: 500; }
+.site-header .brand-kor { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
+.site-header .brand-sub { font-size: 13px; opacity: 0.92; line-height: 1.55; }
+
+/* 컨텐츠 */
+.container { max-width: 640px; margin: 0 auto; padding: 0 16px 24px; }
+
+/* 에이전트 배지 */
+.agent-badge { background: var(--brand-bg); border-left: 4px solid var(--brand-light); padding: 12px 14px; border-radius: 8px; margin: 16px 0; font-size: 13px; color: var(--brand-dark); }
+.agent-badge strong { color: var(--brand-dark); }
+
+/* 메인 카드 */
+.card { background: #fff; border-radius: 12px; box-shadow: 0 2px 14px rgba(106, 27, 154, 0.08); padding: 22px 18px; margin-bottom: 16px; border: 1px solid var(--border); }
+.card-title { display:flex; align-items:center; gap:10px; font-size: 17px; font-weight: 700; margin-bottom: 6px; color: var(--brand-dark); }
+.card-icon { width: 32px; height: 32px; background: var(--brand-bg); border-radius: 8px; display:flex; align-items:center; justify-content:center; font-size: 18px; }
+.card-desc { font-size: 12.5px; color: var(--text-sub); margin-bottom: 16px; line-height: 1.5; }
+
+/* 카테고리 그리드 */
+.cat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 4px; }
+.cat-item { border: 1.5px solid var(--border); background: #fff; border-radius: 10px; padding: 12px 10px; text-align: center; cursor: pointer; user-select: none; -webkit-user-select: none; transition: all 0.15s; position: relative; }
+.cat-item .cat-emoji { font-size: 22px; margin-bottom: 4px; }
+.cat-item .cat-name { font-size: 13px; font-weight: 500; color: var(--text); }
+.cat-item .cat-sub { font-size: 10.5px; color: var(--gray); margin-top: 2px; }
+.cat-item .cat-check { position: absolute; top: 6px; right: 6px; width: 18px; height: 18px; border-radius: 4px; border: 1.5px solid #ccc; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #fff; line-height: 1; }
+.cat-item.on { border-color: var(--brand-dark); background: var(--brand-bg); }
+.cat-item.on .cat-check { background: var(--brand-dark); border-color: var(--brand-dark); }
+.cat-item.on .cat-check::after { content: '✓'; font-weight: 700; }
+.cat-item.on .cat-name { color: var(--brand-dark); font-weight: 700; }
+
+/* 폼 */
+.field { margin-bottom: 14px; }
+.field-label { display: block; font-size: 13px; color: var(--text); font-weight: 500; margin-bottom: 6px; }
+.req { color: var(--danger); font-weight: 700; }
+.field input[type="text"], .field input[type="tel"] { width: 100%; padding: 12px 14px; font-size: 15px; border: 1.5px solid var(--border); border-radius: 8px; background: #fff; font-family: inherit; transition: border-color 0.15s; }
+.field input:focus { outline: none; border-color: var(--brand-light); }
+.field input::placeholder { color: #b8a8c4; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+/* 개인정보 동의 */
+.privacy-row { background: #f9f3fc; border: 1.5px solid var(--border); border-radius: 10px; padding: 14px; display: flex; gap: 10px; align-items: flex-start; cursor: pointer; user-select: none; -webkit-user-select: none; margin: 18px 0 14px; }
+.privacy-row.on { background: var(--brand-bg); border-color: var(--brand-dark); }
+.privacy-checkbox { width: 20px; height: 20px; border: 1.5px solid #ccc; border-radius: 4px; background: #fff; flex-shrink: 0; margin-top: 2px; display:flex; align-items:center; justify-content:center; color:#fff; font-size: 13px; line-height: 1; font-weight: 700; }
+.privacy-row.on .privacy-checkbox { background: var(--brand-dark); border-color: var(--brand-dark); }
+.privacy-row.on .privacy-checkbox::after { content: '✓'; }
+.privacy-text { font-size: 12.5px; line-height: 1.55; color: var(--text-sub); }
+.privacy-text strong { color: var(--brand-dark); }
+.privacy-text small { color: var(--gray); display: block; margin-top: 3px; font-size: 11.5px; }
+
+/* 신청 버튼 */
+.submit-btn { width: 100%; padding: 16px; font-size: 16px; font-weight: 700; color: #fff; background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-light) 100%); border: none; border-radius: 10px; cursor: pointer; font-family: inherit; box-shadow: 0 4px 14px rgba(106, 27, 154, 0.3); transition: transform 0.1s; }
+.submit-btn:active { transform: scale(0.98); }
+
+/* 마감 멘트 */
+.closing-msg { background: var(--brand-bg); border: 1px solid var(--brand-border); border-radius: 10px; padding: 16px; text-align: center; font-size: 13.5px; color: var(--brand-dark); line-height: 1.6; margin-top: 16px; }
+.closing-msg strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+
+/* 완료 화면 */
+.success-screen { display: none; text-align: center; padding: 40px 20px; }
+.success-icon { font-size: 64px; margin-bottom: 16px; }
+.success-title { font-size: 20px; font-weight: 700; color: var(--brand-dark); margin-bottom: 8px; }
+.success-msg { font-size: 14px; color: var(--text-sub); line-height: 1.6; }
+
+/* 푸터 */
+.site-footer { text-align: center; font-size: 11px; color: var(--gray); padding: 20px 16px 30px; line-height: 1.6; }
+.site-footer strong { color: var(--text); font-size: 12px; }
+
+@media (max-width: 380px) {
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .row2 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand-eng">ONEQ PARTNERS</div>
+  <div class="brand-kor">(주) 원큐파트너스</div>
+  <div class="brand-sub">사업장 운영의 모든 것 — 한 번에<br>전문 파트너 매칭 서비스</div>
+</header>
+
+<div class="container">
+
+  <div class="agent-badge" id="agent-badge" style="display:none;">
+    🏷️ 담당 코드 <strong id="agent-code-text"></strong> 를 통해 접속하셨습니다
+  </div>
+
+  <div id="form-screen">
+
+    <!-- 카테고리 선택 -->
+    <div class="card">
+      <div class="card-title">
+        <div class="card-icon">📋</div>
+        <span>관심 분야 선택</span>
+      </div>
+      <div class="card-desc">필요하신 서비스를 모두 선택해 주세요 <span style="color:var(--brand-dark);">(중복 선택 가능)</span></div>
+
+      <div class="cat-grid">
+
+        <div class="cat-item" data-cat="인테리어" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">🏠</div>
+          <div class="cat-name">인테리어</div>
+          <div class="cat-sub">주거 / 상업</div>
+        </div>
+
+        <div class="cat-item" data-cat="인터넷" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">📡</div>
+          <div class="cat-name">인터넷</div>
+          <div class="cat-sub">KT / SK / LG</div>
+        </div>
+
+        <div class="cat-item" data-cat="보안CCTV" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji"><svg width="26" height="26" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+            <rect x="4" y="4" width="24" height="3" rx="1" fill="#6a1b9a"></rect>
+            <path d="M 8 7 Q 8 20 16 22 Q 24 20 24 7 Z" fill="#6a1b9a"></path>
+            <ellipse cx="16" cy="15" rx="5" ry="5.5" fill="#fff"></ellipse>
+            <circle cx="16" cy="15" r="3" fill="#2c1338"></circle>
+            <circle cx="14.5" cy="13.5" r="1" fill="#fff" opacity="0.7"></circle>
+          </svg></div>
+          <div class="cat-name">보안 CCTV</div>
+          <div class="cat-sub">설치 / 출동경비</div>
+        </div>
+
+        <div class="cat-item" data-cat="에어컨냉난방기" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">❄️</div>
+          <div class="cat-name">에어컨 냉난방기</div>
+          <div class="cat-sub">설치 / A/S</div>
+        </div>
+
+        <div class="cat-item" data-cat="POS키오스크" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">🖥️</div>
+          <div class="cat-name">POS·키오스크</div>
+          <div class="cat-sub">테이블오더</div>
+        </div>
+
+        <div class="cat-item" data-cat="사무기기렌탈" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">🖨️</div>
+          <div class="cat-name">사무기기·정수기</div>
+          <div class="cat-sub">렌탈</div>
+        </div>
+
+        <div class="cat-item" data-cat="이사청소" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">🚚</div>
+          <div class="cat-name">이사·청소</div>
+          <div class="cat-sub">업체 매칭</div>
+        </div>
+
+        <div class="cat-item" data-cat="세무법무" onclick="toggleCat(this, event)" ontouchend="handleTouch(this, event, toggleCat)">
+          <div class="cat-check"></div>
+          <div class="cat-emoji">⚖️</div>
+          <div class="cat-name">세무·법무</div>
+          <div class="cat-sub">기장 / 변호사</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 고객 정보 -->
+    <div class="card">
+      <div class="card-title">
+        <div class="card-icon">📝</div>
+        <span>고객 정보</span>
+      </div>
+      <div class="card-desc">정확한 견적을 위해 연락처와 주소를 입력해 주세요</div>
+
+      <form id="inquiry-form" onsubmit="return false;">
+        <div class="row2">
+          <div class="field">
+            <label class="field-label">성함, 상호 <span class="req">*</span></label>
+            <input type="text" id="name" placeholder="홍길동 / ○○상가">
+          </div>
+          <div class="field">
+            <label class="field-label">연락처 <span class="req">*</span></label>
+            <input type="tel" id="phone" placeholder="010-0000-0000">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field-label">사업장 / 시공 주소 <span class="req">*</span></label>
+          <input type="text" id="address" placeholder="예: 경기도 안양시 동안구 ○○로 123">
+        </div>
+
+        <!-- 개인정보 동의 -->
+        <div class="privacy-row" id="privacy-row" onclick="togglePrivacy(event)" ontouchend="handleTouch(null, event, togglePrivacy)">
+          <div class="privacy-checkbox"></div>
+          <div class="privacy-text">
+            <strong>개인정보 수집·이용 동의</strong> <span class="req">*</span>
+            <small>수집 항목: 성함·상호, 연락처, 주소 / 이용 목적: 견적 상담 및 파트너 매칭 / 보유 기간: 상담 완료 후 1년</small>
+          </div>
+        </div>
+
+        <button type="button" class="submit-btn" id="submit-btn" onclick="submitForm()">
+          📋 무료 견적 신청하기
+        </button>
+
+        <div class="closing-msg">
+          <strong>⏰ 빠른 견적 약속</strong>
+          고객님의 스케줄에 맞춰<br>견적 받으실 수 있도록 <strong style="display:inline; font-size:inherit;">빠르게 진행</strong>하겠습니다
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- 완료 화면 -->
+  <div id="success-screen" class="success-screen">
+    <div class="success-icon">✅</div>
+    <div class="success-title">신청이 완료되었습니다!</div>
+    <div class="success-msg">
+      담당자가 확인 후<br>
+      <strong style="color: var(--brand-dark);">빠른 시일 내에 연락드리겠습니다</strong><br><br>
+      <small style="color: var(--gray);">감사합니다 — (주) 원큐파트너스</small>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <strong>(주) 원큐파트너스</strong><br>
+  사업장 운영 통합 매칭 서비스<br>
+  © 2026 ONEQ PARTNERS. All rights reserved.
+</footer>
+
+<script>
+/* ========================================
+   📡 데이터 전송 URL (카페24 호스팅)
+   ======================================== */
+var SUBMIT_URL = 'https://skadt.mycafe24.com/qr/';
+
+var privacyChecked = false;
+var _touchFired = false;
+
+/* 터치/클릭 중복 발생 방지 (모바일 1탭 선택) */
+function handleTouch(el, event, fn) {
+  event.preventDefault();
+  event.stopPropagation();
+  _touchFired = true;
+  setTimeout(function(){ _touchFired = false; }, 400);
+  fn(el, event);
+}
+
+function toggleCat(el, event) {
+  if (event) { event.preventDefault(); event.stopPropagation(); }
+  if (event && event.type === 'click' && _touchFired) return;
+  if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+    document.activeElement.blur();
+  }
+  el.classList.toggle('on');
+}
+
+function togglePrivacy(el, event) {
+  if (event) { event.preventDefault(); event.stopPropagation(); }
+  if (event && event.type === 'click' && _touchFired) return;
+  if (document.activeElement && document.activeElement.tagName === 'INPUT') {
+    document.activeElement.blur();
+  }
+  privacyChecked = !privacyChecked;
+  var row = document.getElementById('privacy-row');
+  if (privacyChecked) row.classList.add('on');
+  else row.classList.remove('on');
+}
+
+/* URL 파라미터에서 영업사원 코드 읽기 */
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var agent = params.get('agent');
+  if (agent) {
+    document.getElementById('agent-code-text').textContent = agent;
+    document.getElementById('agent-badge').style.display = 'block';
+  }
+})();
+
+function submitForm() {
+  var name = document.getElementById('name').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+  var address = document.getElementById('address').value.trim();
+
+  if (!name) { alert('성함 또는 상호를 입력해주세요'); return; }
+  if (!phone) { alert('연락처를 입력해주세요'); return; }
+  if (!address) { alert('주소를 입력해주세요'); return; }
+  if (!privacyChecked) { alert('개인정보 수집·이용에 동의해주세요'); return; }
+
+  var categories = [];
+  var items = document.querySelectorAll('.cat-item.on');
+  for (var i = 0; i < items.length; i++) {
+    categories.push(items[i].getAttribute('data-cat'));
+  }
+  if (categories.length === 0) { alert('관심 분야를 1개 이상 선택해주세요'); return; }
+
+  var params = new URLSearchParams(window.location.search);
+  var agentCode = params.get('agent') || '직접유입';
+
+  var payload = {
+    company: '원큐파트너스',
+    code: agentCode,
+    agent: agentCode,
+    name: name,
+    phone: phone,
+    address: address,
+    categories: categories.join(','),
+    categories_text: categories.join(', '),
+    submitted_at: new Date().toISOString(),
+    user_agent: navigator.userAgent
+  };
+
+  /* form-encoded 변환 (PHP $_POST 호환) */
+  var formData = new URLSearchParams();
+  for (var key in payload) { formData.append(key, payload[key]); }
+
+  var btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = '⏳ 신청 처리 중...';
+  btn.style.opacity = '0.7';
+
+  /* 사이트로 데이터 전송 (no-cors: 카페24 호스팅 응답은 받지 않음) */
+  fetch(SUBMIT_URL + '?code=' + encodeURIComponent(agentCode), {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+    body: formData.toString()
+  })
+  .then(function() {
+    document.getElementById('form-screen').style.display = 'none';
+    document.getElementById('success-screen').style.display = 'block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+  .catch(function(err) {
+    alert('전송 중 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.');
+    btn.disabled = false;
+    btn.textContent = '📋 무료 견적 신청하기';
+    btn.style.opacity = '1';
+    console.error('전송 오류:', err);
+  });
+}
+</script>
+
+
+
+</body></html>
